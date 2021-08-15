@@ -1,7 +1,7 @@
 version: '3'
 
 volumes:
-  data:
+  postgres_data:
 
 services:
   web:
@@ -16,7 +16,7 @@ services:
     ports:
       - 5432:5432
     volumes:
-      - data:/var/lib/postgres/data
+      - postgres_data:/var/lib/postgresql/data/
     environment:
       POSTGRES_USER: huser
       POSTGRES_PASSWORD: Passw0rd
