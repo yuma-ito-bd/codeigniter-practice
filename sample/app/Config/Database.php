@@ -56,11 +56,11 @@ class Database extends Config
 	 */
 	public $tests = [
 		'DSN'      => '',
-		'hostname' => '127.0.0.1',
-		'username' => '',
-		'password' => '',
-		'database' => ':memory:',
-		'DBDriver' => 'SQLite3',
+        'hostname' => 'localhost',
+		'username' => 'huser',
+		'password' => 'Passw0rd',
+		'database' => 'codeigniter',
+		'DBDriver' => 'Postgre',
 		'DBPrefix' => 'db_',  // Needed to ensure we're working correctly with prefixes live. DO NOT REMOVE FOR CI DEVS
 		'pConnect' => false,
 		'DBDebug'  => (ENVIRONMENT !== 'production'),
@@ -71,7 +71,7 @@ class Database extends Config
 		'compress' => false,
 		'strictOn' => false,
 		'failover' => [],
-		'port'     => 3306,
+		'port'     => 5432,
 	];
 
 	//--------------------------------------------------------------------
